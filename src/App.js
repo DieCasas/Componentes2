@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './componentes/Card'
+
+//IMAGENES
+import img from './assets/img/hambur.jpg'
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='containerCards'>
+        <Card 
+          name='Hambur Completa'
+          description='Hamburguesa Completa con todo lo que esperas'
+          img={img}
+          />
+      </div>
+      
     </div>
   );
 }
